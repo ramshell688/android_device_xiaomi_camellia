@@ -349,6 +349,8 @@ PRODUCT_PACKAGES += \
     RcsService
 
 # Runtime Resource (RRO) Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayCamellia \
     FrameworksResOverlayCamellia \
