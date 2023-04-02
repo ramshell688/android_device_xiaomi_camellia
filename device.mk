@@ -135,15 +135,9 @@ PRODUCT_PACKAGES += \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin
 
-# Dumpstate
-PRODUCT_PACKAGES += \
-    android.hardware.dumpstate@1.1.vendor:64
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.composer@2.1-resources.vendor:64 \
-    android.hardware.graphics.composer@2.1.vendor:64 \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
     disable_configstore \
@@ -158,6 +152,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -183,10 +180,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
-
-# IFAA
-PRODUCT_PACKAGES += \
-    IFAAService
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -232,10 +225,13 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service
+    android.hardware.media.omx@1.0-service \
+    android.hardware.media.c2@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.2.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_vndk.vendor \
+    libavservices_minijail \
     libavservices_minijail.vendor \
     libsfplugin_ccodec_utils.vendor
 
@@ -257,15 +253,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     mtk_plpath_utils \
     mtk_plpath_utils.recovery
-
-# Mlipay
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.mlipay@1.1.vendor
-
-# Neural Networks
-PRODUCT_PACKAGES += \
-    libruy \
-    android.hardware.neuralnetworks@1.3.vendor:64
 
 # NFC
 #PRODUCT_COPY_FILES += \
@@ -349,6 +336,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.1.vendor \
     android.hardware.radio@1.6.vendor:64
 
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-lite
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     factory_init.connectivity.common.rc \
@@ -422,7 +413,6 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.multihal \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
