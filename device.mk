@@ -331,6 +331,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.mt6833 \
+    fstab.mt6833.ramdisk \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6833.rc \
