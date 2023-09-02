@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_camellia.mk
+    $(LOCAL_DIR)/spark_camellia.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_camellia-user \
-    superior_camellia-userdebug \
-    superior_camellia-eng
+    spark_camellia-user \
+    spark_camellia-userdebug \
+    spark_camellia-eng
