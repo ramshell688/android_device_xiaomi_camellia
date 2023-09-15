@@ -1,0 +1,32 @@
+[
+	{
+		"remote":	"github"
+		"repository":	"ramshell688/android_device_xiaomi_camellia-kernel",
+		"target_path":	"device/xiaomi/camellia-kernel"
+		"branch":	"thirteen"
+	},
+	{
+		"remote":	"github"
+		"repository":	"ramshell688/android_vendor_xiaomi_camellia"
+		"target_path":	"vendor/xiaomi/camellia"
+		"branch":	"thirteen"
+	},
+	{
+		"remote":	"github",
+		"repository":	"ramshell688/android_device_mediatek_sepolicy_vndr",
+		"target_path":	"device/mediatek/sepolicy_vndr",
+		"branch":	"thirtren"
+	},
+	{
+		"remote":	"github",
+		"repository":	"ramshell688/hardware_mediatek",
+		"target_path":	"hardware/mediatek",
+		"branch":	"thirteen"
+	},
+	{
+		"remote":       "github",
+                "repository":   "ramshell688/packages_apps_FMRadio",
+                "target_path":  "packages/apps/FMRadio",
+                "branch":       "thirteen"
+	}
+]
