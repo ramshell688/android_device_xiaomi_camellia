@@ -117,6 +117,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera_metadata_shim
 
+PRODUCT_PACKAGES += \
+    Aperture
+
 # CAS
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
@@ -378,10 +381,6 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlayCamellia \
     WifiOverlayCamellia
 
-# Screen Resolution
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
-
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor:64
@@ -395,10 +394,6 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libshim_vtservice
-
-# Overlays
-PRODUCT_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \

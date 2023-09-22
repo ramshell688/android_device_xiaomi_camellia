@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_camellia.mk
+    $(LOCAL_DIR)/halcyon_camellia.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_camellia-user \
-    aosp_camellia-userdebug \
-    aosp_camellia-eng
+    halcyon_camellia-user \
+    halcyon_camellia-userdebug \
+    halcyon_camellia-eng
